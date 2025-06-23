@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Aromax</string>
+    <!-- AI Generated -->
+    <string name="login_welcome_back">Bem-vindo de volta!</string>
+    <string name="login_email_label">E-mail</string>
+    <string name="login_email_hint">seuemail@exemplo.com</string>
+    <string name="login_password_label">Senha</string>
+    <string name="login_button_text">Entrar</string>
+
+    <string name="login_no_account_prompt">
+        <![CDATA[Ainda não tem conta? <font color="#5D2A8E"><b>Cadastre-se</b></font>]]>
+    </string>
+    <string name="main_panel_title">Painel do Aromatizador</string>
+    <string name="main_total_time">Tempo total: 1s</string>
+    <string name="main_minutes_label">Minutos</string>
+    <string name="main_seconds_label">Segundos</string>
+    <string name="main_start_button">Iniciar Perfume</string>
+    <string name="main_timer_default">00:00</string>
+    <string name="initial_time_value">0</string>
+
+    <string name="register_title">Crie sua conta</string>
+    <string name="register_full_name_label">Nome Completo</string>
+    <string name="register_full_name_hint">Seu nome completo</string>
+    <string name="register_email_label">E-mail</string>
+    <string name="register_password_label">Senha</string>
+    <string name="register_password_hint">Crie uma senha</string>
+    <string name="register_confirm_password_label">Confirmar Senha</string>
+    <string name="register_confirm_password_hint">Repita a senha</string>
+    <string name="register_button_text">Cadastrar</string>
+
+    <string name="register_already_have_account">
+        <![CDATA[Já tem uma conta? <font color="#5D2A8E"><b>Entrar</b></font>]]>
+    </string>
+
+</resources>
