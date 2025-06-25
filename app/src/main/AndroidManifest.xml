@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <!-- Permissões antigas para Android 11 e inferior -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-
     <!--
     Permissões novas e necessárias para Android 12 e superior.
     O android:maxSdkVersion="30" nas permissões antigas indica que elas
@@ -13,6 +11,9 @@
     -->
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:allowBackup="true"
@@ -24,6 +25,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aromax"
         tools:targetApi="31">
+
+        <service android:foregroundServiceType="shortService" android:name=".services.TimerService" android:enabled="true" android:exported="false" />
+
+        <activity
+            android:name=".HistoricoActivity"
+            android:exported="false" />
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />

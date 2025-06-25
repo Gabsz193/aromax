@@ -28,6 +28,15 @@
     <string name="register_confirm_password_label">Confirmar Senha</string>
     <string name="register_confirm_password_hint">Repita a senha</string>
     <string name="register_button_text">Cadastrar</string>
+    <string name="main_view_history_button">Ver Histórico</string>
+
+    <string name="historico_title">Histórico de Registros</string>
+    <string name="coluna_data_hora">Data/Hora</string>
+    <string name="coluna_tempo_total">Tempo Total (min)</string>
+    <string name="coluna_intervalo">Intervalo (s)</string>
+    <string name="botao_voltar">Voltar</string>
+    <string name="iniciar_novo_registro">Iniciar Novo Registro</string>
+    <string name="ver_historico">Ver Histórico</string>
 
     <string name="register_already_have_account">
         <![CDATA[Já tem uma conta? <font color="#5D2A8E"><b>Entrar</b></font>]]>
