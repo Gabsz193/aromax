@@ -22,6 +22,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#FFFFFF"
             android:padding="24dp">
 
             <TextView
@@ -47,34 +48,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textViewPanelTitle"
-                tools:text="Tempo total: 1ss" />
-
-            <ImageButton
-                android:id="@+id/buttonMinus"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/bg_button_circular"
-                android:contentDescription="Subtrair tempo"
-                android:src="@drawable/ic_minus"
-                app:layout_constraintEnd_toStartOf="@+id/buttonPlus"
-                app:layout_constraintHorizontal_chainStyle="packed"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textViewTotalTimeLabel"
-                app:tint="@color/white" />
-
-            <ImageButton
-                android:id="@+id/buttonPlus"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="24dp"
-                android:background="@drawable/bg_button_circular"
-                android:contentDescription="Adicionar tempo"
-                android:src="@drawable/ic_plus"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/buttonMinus"
-                app:layout_constraintTop_toTopOf="@id/buttonMinus"
-                app:tint="@color/white" />
+                tools:text="@string/main_total_time" />
 
             <TextView
                 android:id="@+id/textViewMinutesLabel"
@@ -86,7 +60,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/buttonMinus" />
+                app:layout_constraintTop_toBottomOf="@id/textViewTotalTimeLabel" />
 
             <EditText
                 android:id="@+id/editTextMinutes"
@@ -97,8 +71,11 @@
                 android:gravity="center"
                 android:inputType="number"
                 android:maxLength="3"
-                android:text="@string/initial_time_value"
                 android:padding="12dp"
+                android:shadowColor="#000000"
+                android:text="@string/initial_time_value"
+                android:textColor="#000000"
+                android:textColorHint="#070707"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textViewMinutesLabel" />
@@ -124,8 +101,10 @@
                 android:gravity="center"
                 android:inputType="number"
                 android:maxLength="2"
-                android:text="@string/initial_time_value"
                 android:padding="12dp"
+                android:shadowColor="#000000"
+                android:text="@string/initial_time_value"
+                android:textColor="#000000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textViewSecondsLabel" />
